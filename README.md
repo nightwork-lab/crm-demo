@@ -30,9 +30,11 @@ npm run dev
 
 | 変数名 | 必須 | 用途 |
 |---|---|---|
-| `AUTH_ENABLED` | ✓ | Basic認証の有効/無効。`true` または `false` |
-| `APP_AUTH_USER` | Vercel公開時必須 | Basic認証ユーザー名 |
-| `APP_AUTH_PASS` | Vercel公開時必須 | Basic認証パスワード（20文字以上推奨） |
+| `SUPABASE_URL` / `SUPABASE_ANON_KEY` | 本番必須 | Supabase Auth によるログイン（`proxy.ts`）。両方未設定なら認証をスキップ |
+| `DEMO_BASIC_AUTH_USER` | デモ公開時のみ | デモ環境の Basic 認証ユーザー名。`DEMO_BASIC_AUTH_PASS` と両方設定した時だけ有効 |
+| `DEMO_BASIC_AUTH_PASS` | デモ公開時のみ | デモ環境の Basic 認証パスワード（20文字以上推奨） |
+
+※ 旧仕様の `AUTH_ENABLED` / `APP_AUTH_USER` / `APP_AUTH_PASS` は現在のコードでは参照されない（以降の記述は旧仕様の名残）。
 
 ### アプリ動作
 
@@ -77,7 +79,8 @@ npm run dev:demo
 ```
 
 - 切替は環境変数 `DATA_DIR`（既定 `data`）。`DATA_DIR=data/demo` で読み書き先がデモ用ディレクトリになる
-- Vercel でデモ環境を作る場合は、環境変数に `DATA_DIR=data/demo` と `APP_READONLY=true` を設定する
+- Vercel でデモ環境を作る場合は、環境変数に `DATA_DIR=data/demo` と `APP_READONLY=true` を設定する。`SUPABASE_*` は設定しない（ログイン画面を出さない）
+- デモ環境を Basic 認証で守るには `DEMO_BASIC_AUTH_USER` と `DEMO_BASIC_AUTH_PASS` を両方設定する（`proxy.ts`）。両方そろった時だけ有効で、本番には影響しない。未認証は 401 を返す
 - happ 同期（`sync:happ` / `sync:happ-history`）は `DATA_DIR` の対象外で、常に `data/` に書く。デモ環境では同期を実行しないこと
 - ダミーデータは架空の氏名・金額のみ。`customer-predictions.json` もデモ用のものを `data/demo/` に含む
 

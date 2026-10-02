@@ -1,14 +1,20 @@
 /**
  * 認証プロキシ（Next.js 16 の "Proxy" = 旧 Middleware）
  *
- * Supabase Auth セッションを確認し、未ログインなら /login へリダイレクト。
- * SUPABASE_URL / SUPABASE_ANON_KEY 未設定時はスキップ（開発時の安全策）。
+ * 1. デモ公開用の Basic 認証
+ *    DEMO_BASIC_AUTH_USER と DEMO_BASIC_AUTH_PASS の両方が設定されている時だけ有効。
+ *    片方だけ、または未設定なら何もしない（本番の Supabase Auth には影響しない）。
+ * 2. Supabase Auth セッションを確認し、未ログインなら /login へリダイレクト。
+ *    SUPABASE_URL / SUPABASE_ANON_KEY 未設定時はスキップ（開発時の安全策）。
  */
 
 import { createServerClient } from '@supabase/ssr'
 import { NextRequest, NextResponse } from 'next/server'
 
 export async function proxy(req: NextRequest): Promise<NextResponse> {
+  const denied = checkDemoBasicAuth(req)
+  if (denied) return denied
+
   const url     = process.env.SUPABASE_URL
   const anonKey = process.env.SUPABASE_ANON_KEY
 
@@ -49,6 +55,46 @@ export async function proxy(req: NextRequest): Promise<NextResponse> {
   }
 
   return response
+}
+
+/**
+ * デモ公開用の Basic 認証。
+ * 認証情報が一致すれば null（通過）、不一致・未提示なら 401 を返す。
+ * 環境変数が揃っていなければ常に null（機能オフ）。
+ */
+function checkDemoBasicAuth(req: NextRequest): NextResponse | null {
+  const expectedUser = process.env.DEMO_BASIC_AUTH_USER
+  const expectedPass = process.env.DEMO_BASIC_AUTH_PASS
+  if (!expectedUser || !expectedPass) return null
+
+  const header = req.headers.get('authorization') ?? ''
+  if (header.startsWith('Basic ')) {
+    let decoded = ''
+    try { decoded = atob(header.slice(6).trim()) } catch { decoded = '' }
+    const sep  = decoded.indexOf(':')
+    const user = sep >= 0 ? decoded.slice(0, sep) : decoded
+    const pass = sep >= 0 ? decoded.slice(sep + 1) : ''
+    if (safeEqual(user, expectedUser) && safeEqual(pass, expectedPass)) return null
+  }
+
+  return new NextResponse('Authentication required', {
+    status: 401,
+    headers: {
+      'WWW-Authenticate': 'Basic realm="crm-demo", charset="UTF-8"',
+      'Cache-Control': 'no-store',
+    },
+  })
+}
+
+/** 入力の長さや内容で処理時間が変わらない比較（Node / Edge どちらでも動く） */
+function safeEqual(a: string, b: string): boolean {
+  const enc = new TextEncoder()
+  const x = enc.encode(a)
+  const y = enc.encode(b)
+  let diff = x.length ^ y.length
+  const n = Math.max(x.length, y.length)
+  for (let i = 0; i < n; i++) diff |= (x[i] ?? 0) ^ (y[i] ?? 0)
+  return diff === 0
 }
 
 export const config = {
