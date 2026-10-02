@@ -1,0 +1,47 @@
+{
+  "name": "custmer-crm",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:clean": "bash scripts/start-dev.sh",
+    "dev:demo": "DATA_DIR=data/demo APP_READONLY=true AUTH_ENABLED=false next dev",
+    "demo:generate": "node --experimental-strip-types scripts/generate-demo-data.ts",
+    "report:hours": "tsx scripts/report-work-hours.ts",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "sync:happ": "tsx scripts/sync-happ.ts",
+    "sync:happ-history": "tsx scripts/sync-happ-history.ts",
+    "backup:data": "node --experimental-strip-types scripts/backup-data.ts",
+    "restore:data": "node --experimental-strip-types scripts/restore-data.ts",
+    "validate:data": "node --experimental-strip-types scripts/validate-data.ts",
+    "import:supabase": "node --experimental-strip-types --env-file=.env.local scripts/import-supabase.ts",
+    "import:supabase:confirm": "node --experimental-strip-types --env-file=.env.local scripts/import-supabase.ts --confirm",
+    "backup:supabase": "npx tsx scripts/backup-supabase.ts",
+    "restore:supabase": "npx tsx scripts/restore-supabase.ts",
+    "sync:owner": "npx tsx scripts/owner-sync-worker.ts",
+    "sync:owner-history": "npx tsx scripts/owner-history-worker.ts",
+    "mirror:supabase": "tsx scripts/mirror-supabase.ts"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.10.3",
+    "@supabase/supabase-js": "^2.106.2",
+    "next": "16.2.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "dotenv": "^17.4.2",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "playwright": "^1.60.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.22.1",
+    "typescript": "^5"
+  }
+}

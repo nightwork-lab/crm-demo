@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* このアプリはライトモード固定のため、ダークモード CSS 変数は使用しない */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ── iPhone X+ セーフエリア対応 ───────────────────────────────────── */
+/*
+ * viewport-fit=cover と組み合わせて使用する。
+ * safe-area-pb : ナビバー下部にホームインジケータ分の余白を追加
+ * pb-nav       : スクロールエリアのコンテンツがナビに隠れないよう下端を確保
+ */
+@layer utilities {
+  .safe-area-pb {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .pb-nav {
+    /* ナビ高さ(5rem=80px) + ホームインジケータ分のセーフエリア */
+    padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
+  }
+}

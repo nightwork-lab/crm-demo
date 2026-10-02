@@ -1,0 +1,425 @@
+[
+  {
+    "id": "1",
+    "name": "小林 美咲",
+    "lastVisit": "2026-09-14",
+    "totalSales": 570000,
+    "repeatCount": 21,
+    "nextReservation": "2026-10-12",
+    "memo": "前回は仕事の相談が中心だった",
+    "tags": [
+      "紹介"
+    ],
+    "birthday": "10-29",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "name": "石井 千夏",
+    "lastVisit": "2026-09-18",
+    "totalSales": 564000,
+    "repeatCount": 22,
+    "nextReservation": "2026-10-12",
+    "memo": "香水は苦手。無香料で",
+    "tags": [
+      "要フォロー"
+    ],
+    "birthday": "02-07",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "3",
+    "name": "高橋 夏美",
+    "lastVisit": "2026-09-13",
+    "totalSales": 606000,
+    "repeatCount": 24,
+    "nextReservation": "2026-10-07",
+    "memo": "記念日は初回の日を大事にしている",
+    "tags": [
+      "新規"
+    ],
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "4",
+    "name": "前田 理沙",
+    "lastVisit": "2026-09-16",
+    "totalSales": 630000,
+    "repeatCount": 24,
+    "nextReservation": "2026-10-10",
+    "memo": "誕生日は控えめに祝ってほしいとのこと",
+    "tags": [
+      "要フォロー"
+    ],
+    "birthday": "05-25",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "5",
+    "name": "村上 愛",
+    "lastVisit": "2026-09-16",
+    "totalSales": 534000,
+    "repeatCount": 19,
+    "memo": "猫を飼っている（名前：もち）",
+    "tags": [],
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "6",
+    "name": "長谷川 彩乃",
+    "lastVisit": "2026-09-19",
+    "totalSales": 624000,
+    "repeatCount": 24,
+    "memo": "静かな店を好む。にぎやかな場所は避ける",
+    "tags": [
+      "常連",
+      "VIP"
+    ],
+    "birthday": "12-06",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "7",
+    "name": "井上 美咲",
+    "lastVisit": "2026-09-08",
+    "totalSales": 738000,
+    "repeatCount": 26,
+    "nextReservation": "2026-10-09",
+    "memo": "お酒は弱め。紅茶が好き",
+    "tags": [
+      "新規"
+    ],
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "8",
+    "name": "後藤 葵",
+    "lastVisit": "2026-09-16",
+    "totalSales": 654000,
+    "repeatCount": 23,
+    "nextReservation": "2026-10-12",
+    "memo": "記念日は初回の日を大事にしている",
+    "tags": [
+      "要フォロー"
+    ],
+    "birthday": "07-26",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "9",
+    "name": "山口 優花",
+    "lastVisit": "2026-09-07",
+    "totalSales": 546000,
+    "repeatCount": 20,
+    "memo": "誕生日は控えめに祝ってほしいとのこと",
+    "tags": [
+      "遠方"
+    ],
+    "birthday": "05-05",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "10",
+    "name": "山口 杏",
+    "lastVisit": "2026-09-09",
+    "totalSales": 636000,
+    "repeatCount": 25,
+    "nextReservation": "2026-10-09",
+    "memo": "甘いものが好き。差し入れはマカロン",
+    "tags": [
+      "紹介"
+    ],
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "11",
+    "name": "遠藤 彩乃",
+    "lastVisit": "2026-07-14",
+    "totalSales": 438000,
+    "repeatCount": 16,
+    "memo": "終電を気にするので 23 時までに終えたい",
+    "tags": [
+      "要フォロー"
+    ],
+    "birthday": "12-22",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "12",
+    "name": "山下 夏美",
+    "lastVisit": "2026-07-17",
+    "totalSales": 366000,
+    "repeatCount": 13,
+    "memo": "電話より LINE の方が返事が早い",
+    "tags": [
+      "要フォロー"
+    ],
+    "birthday": "06-15",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "13",
+    "name": "橋本 千夏",
+    "lastVisit": "2026-07-26",
+    "totalSales": 510000,
+    "repeatCount": 20,
+    "memo": "月末は仕事が忙しい。月初に連絡するとつながりやすい",
+    "tags": [
+      "要フォロー"
+    ],
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "14",
+    "name": "長谷川 菜月",
+    "lastVisit": "2026-07-29",
+    "totalSales": 450000,
+    "repeatCount": 16,
+    "memo": "香水は苦手。無香料で",
+    "tags": [
+      "要フォロー"
+    ],
+    "birthday": "01-18",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "15",
+    "name": "佐藤 由紀",
+    "lastVisit": "2026-07-18",
+    "totalSales": 372000,
+    "repeatCount": 14,
+    "memo": "前回は仕事の相談が中心だった",
+    "tags": [
+      "要フォロー"
+    ],
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "16",
+    "name": "石川 莉子",
+    "lastVisit": "2026-08-08",
+    "totalSales": 360000,
+    "repeatCount": 14,
+    "memo": "記念日は初回の日を大事にしている",
+    "tags": [
+      "要フォロー"
+    ],
+    "birthday": "11-17",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "17",
+    "name": "鈴木 明日香",
+    "lastVisit": "2026-08-03",
+    "totalSales": 432000,
+    "repeatCount": 15,
+    "memo": "お酒は弱め。紅茶が好き",
+    "tags": [
+      "要フォロー"
+    ],
+    "birthday": "02-28",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "18",
+    "name": "青木 麻衣",
+    "lastVisit": "2026-07-26",
+    "totalSales": 468000,
+    "repeatCount": 18,
+    "memo": "終電を気にするので 23 時までに終えたい",
+    "tags": [
+      "要フォロー"
+    ],
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "19",
+    "name": "前田 若菜",
+    "lastVisit": "2026-05-10",
+    "totalSales": 342000,
+    "repeatCount": 13,
+    "memo": "月末は仕事が忙しい。月初に連絡するとつながりやすい",
+    "tags": [
+      "常連"
+    ],
+    "birthday": "08-13",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "20",
+    "name": "坂本 葵",
+    "lastVisit": "2026-05-10",
+    "totalSales": 360000,
+    "repeatCount": 13,
+    "memo": "静かな店を好む。にぎやかな場所は避ける",
+    "tags": [
+      "新規"
+    ],
+    "birthday": "07-02",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "21",
+    "name": "佐藤 菜月",
+    "lastVisit": "2026-02-17",
+    "totalSales": 204000,
+    "repeatCount": 8,
+    "memo": "香水は苦手。無香料で",
+    "tags": [],
+    "birthday": "01-05",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "22",
+    "name": "阿部 葵",
+    "lastVisit": "2026-02-05",
+    "totalSales": 198000,
+    "repeatCount": 8,
+    "memo": "誕生日は控えめに祝ってほしいとのこと",
+    "tags": [
+      "常連",
+      "VIP"
+    ],
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "23",
+    "name": "阿部 未来",
+    "lastVisit": "2026-04-10",
+    "totalSales": 288000,
+    "repeatCount": 12,
+    "memo": "記念日は初回の日を大事にしている",
+    "tags": [
+      "要フォロー"
+    ],
+    "birthday": "06-16",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "24",
+    "name": "松本 莉子",
+    "lastVisit": "2026-04-06",
+    "totalSales": 282000,
+    "repeatCount": 12,
+    "memo": "電話より LINE の方が返事が早い",
+    "tags": [
+      "要フォロー"
+    ],
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "25",
+    "name": "伊藤 結衣",
+    "lastVisit": "2026-09-23",
+    "totalSales": 72000,
+    "repeatCount": 3,
+    "memo": "甘いものが好き。差し入れはマカロン",
+    "tags": [
+      "新規"
+    ],
+    "birthday": "10-11",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "26",
+    "name": "斎藤 美咲",
+    "lastVisit": "2026-09-16",
+    "totalSales": 54000,
+    "repeatCount": 2,
+    "memo": "香水は苦手。無香料で",
+    "tags": [
+      "新規"
+    ],
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "27",
+    "name": "加藤 美月",
+    "lastVisit": "2026-09-23",
+    "totalSales": 54000,
+    "repeatCount": 2,
+    "memo": "終電を気にするので 23 時までに終えたい",
+    "tags": [
+      "新規"
+    ],
+    "birthday": "06-09",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "28",
+    "name": "山本 杏",
+    "lastVisit": "2026-09-18",
+    "totalSales": 24000,
+    "repeatCount": 1,
+    "memo": "記念日は初回の日を大事にしている",
+    "tags": [
+      "新規"
+    ],
+    "birthday": "02-16",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "29",
+    "name": "鈴木 麻衣",
+    "lastVisit": "2026-09-22",
+    "totalSales": 54000,
+    "repeatCount": 2,
+    "memo": "終電を気にするので 23 時までに終えたい",
+    "tags": [
+      "新規"
+    ],
+    "birthday": "07-10",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "30",
+    "name": "池田 結衣",
+    "lastVisit": "2026-09-14",
+    "totalSales": 18000,
+    "repeatCount": 1,
+    "memo": "電話より LINE の方が返事が早い",
+    "tags": [
+      "新規"
+    ],
+    "birthday": "11-13",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "31",
+    "name": "橋本 葵",
+    "lastVisit": "2026-09-11",
+    "totalSales": 246000,
+    "repeatCount": 10,
+    "memo": "猫を飼っている（名前：もち）",
+    "tags": [
+      "常連"
+    ],
+    "birthday": "09-30",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "32",
+    "name": "中村 紗英",
+    "lastVisit": "2026-09-18",
+    "totalSales": 366000,
+    "repeatCount": 13,
+    "memo": "記念日は初回の日を大事にしている",
+    "tags": [],
+    "birthday": "10-01",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  },
+  {
+    "id": "33",
+    "name": "池田 千夏",
+    "lastVisit": "2026-09-07",
+    "totalSales": 420000,
+    "repeatCount": 14,
+    "memo": "前回は仕事の相談が中心だった",
+    "tags": [
+      "常連",
+      "VIP"
+    ],
+    "birthday": "10-02",
+    "updatedAt": "2026-09-30T09:00:00.000Z"
+  }
+]

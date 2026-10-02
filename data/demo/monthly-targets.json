@@ -1,0 +1,24 @@
+{
+  "targets": [
+    {
+      "targetMonth": "2026-07",
+      "targetRevenue": 1300000,
+      "updatedAt": "2026-09-30T09:00:00.000Z"
+    },
+    {
+      "targetMonth": "2026-08",
+      "targetRevenue": 1400000,
+      "updatedAt": "2026-09-30T09:00:00.000Z"
+    },
+    {
+      "targetMonth": "2026-09",
+      "targetRevenue": 1500000,
+      "updatedAt": "2026-09-30T09:00:00.000Z"
+    },
+    {
+      "targetMonth": "2026-10",
+      "targetRevenue": 1600000,
+      "updatedAt": "2026-09-30T09:00:00.000Z"
+    }
+  ]
+}

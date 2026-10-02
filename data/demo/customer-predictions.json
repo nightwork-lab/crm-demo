@@ -1,0 +1,106 @@
+{
+  "predictions": [
+    {
+      "customerId": "1",
+      "targetMonth": "2026-09",
+      "predictedVisits": 1,
+      "predictedRevenue": 72000,
+      "memo": "月初に連絡予定",
+      "followUpStatus": "contacted",
+      "updatedAt": "2026-09-30T09:00:00.000Z"
+    },
+    {
+      "customerId": "2",
+      "targetMonth": "2026-09",
+      "predictedVisits": 1,
+      "predictedRevenue": 72000,
+      "memo": "",
+      "followUpStatus": "needs_contact",
+      "updatedAt": "2026-09-30T09:00:00.000Z"
+    },
+    {
+      "customerId": "4",
+      "targetMonth": "2026-09",
+      "predictedVisits": 1,
+      "predictedRevenue": 24000,
+      "memo": "",
+      "updatedAt": "2026-09-30T09:00:00.000Z"
+    },
+    {
+      "customerId": "5",
+      "targetMonth": "2026-09",
+      "predictedVisits": 3,
+      "predictedRevenue": 72000,
+      "memo": "月初に連絡予定",
+      "updatedAt": "2026-09-30T09:00:00.000Z"
+    },
+    {
+      "customerId": "6",
+      "targetMonth": "2026-09",
+      "predictedVisits": 2,
+      "predictedRevenue": 24000,
+      "memo": "",
+      "followUpStatus": "contacted",
+      "updatedAt": "2026-09-30T09:00:00.000Z"
+    },
+    {
+      "customerId": "8",
+      "targetMonth": "2026-09",
+      "predictedVisits": 2,
+      "predictedRevenue": 72000,
+      "memo": "",
+      "followUpStatus": "needs_contact",
+      "updatedAt": "2026-09-30T09:00:00.000Z"
+    },
+    {
+      "customerId": "9",
+      "targetMonth": "2026-09",
+      "predictedVisits": 3,
+      "predictedRevenue": 72000,
+      "memo": "月初に連絡予定",
+      "updatedAt": "2026-09-30T09:00:00.000Z"
+    },
+    {
+      "customerId": "10",
+      "targetMonth": "2026-09",
+      "predictedVisits": 3,
+      "predictedRevenue": 72000,
+      "memo": "",
+      "updatedAt": "2026-09-30T09:00:00.000Z"
+    },
+    {
+      "customerId": "11",
+      "targetMonth": "2026-09",
+      "predictedVisits": 1,
+      "predictedRevenue": 24000,
+      "memo": "",
+      "followUpStatus": "contacted",
+      "updatedAt": "2026-09-30T09:00:00.000Z"
+    },
+    {
+      "customerId": "12",
+      "targetMonth": "2026-09",
+      "predictedVisits": 2,
+      "predictedRevenue": 72000,
+      "memo": "月初に連絡予定",
+      "followUpStatus": "needs_contact",
+      "updatedAt": "2026-09-30T09:00:00.000Z"
+    },
+    {
+      "customerId": "13",
+      "targetMonth": "2026-09",
+      "predictedVisits": 1,
+      "predictedRevenue": 72000,
+      "memo": "",
+      "updatedAt": "2026-09-30T09:00:00.000Z"
+    },
+    {
+      "customerId": "14",
+      "targetMonth": "2026-09",
+      "predictedVisits": 1,
+      "predictedRevenue": 48000,
+      "memo": "",
+      "updatedAt": "2026-09-30T09:00:00.000Z"
+    }
+  ]
+}
